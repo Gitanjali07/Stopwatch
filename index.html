@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stopwatch</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"                                                 integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <style>
+      body{
+background-color:lightcyan;
+text-align: center;
+font-size: 40px;
+      }
+      #timerBox {
+width:60%;
+margin:auto;
+font-size: 24px;
+    }
+    .timer, .reset {
+border-bottom: 10px solid #c0c0c0;
+padding: 20px 10px;
+color: #000;
+width: 90%;
+background: #38A5F9;
+cursor: pointer
+    }
+    .reset:hover {
+      background: #e2efe2;
+    }
+   .box{
+color: #E2E;}    
+    
+       </style>
+</head>
+<body>
+    
+<div class="box"> <h1><b>Stop-watch</b></h1></div>
+  <div id="timerBox">
+    <div class="timer" onclick="startTimer()">Start</div>
+    <div class="startTimer reset" onclick="startTimer()" >
+      <i class="fas fa-play"></i>
+    </div>
+    <div class="pauseTimer reset" onclick="pauseTimer()" >
+      <i class="fas fa-pause"></i>
+    </div>
+    <div class="resetTimer reset" onclick="resetTimer()">Reset</div>
+  </div>
+  <script type="text/javascript" src="stopWatch.js"></script>
+</body>
+    
+</html>
